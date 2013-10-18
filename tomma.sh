@@ -1,40 +1,48 @@
 #!/bin/bash
 
-echo "Content-type:  text/html"
+
+echo "Content-type:    text/html"
 echo ""
 
-echo '<html>'
+echo 'tomma.sh         <html>'
 #echo  '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />'
-echo '<body>'
+echo 'tomma.sh         <body>'
 
-echo "Helo there<br />"
-echo " Just testade<br /> "
-echo "<hr>"
+echo "tomma.sh         Helo there<br />"
+echo "tomma.sh         Just testade<br /> "
+echo "tomma.sh         <hr>"
 date 
 date    >> /var/www/omx.utc/aaa.cgibol
-echo "<hr>"
+echo "                 <hr>"
 
-for f in /var/www/omx.utc/*_UTC;
+for f in "/var/www/omx.utc/"*"_UTC";
 #for f in *;
 do
-echo "<br />"
+echo "tomma.sh         <br />"
+echo "tomma.sh          /var/www/omx.utc.ark/" 
+echo 'tomma.shv        '$(basename "$f") 
+echo "tomma.sh         WWWWWWWWWWWWWWWWWW" 
+
+
+
+
 
 cat $f   >>  "/var/www/omx.utc.ark/"$(basename "$f") 
 
 
-echo "concat :::"  $f  " ---  /var/www/omx.utc.ark/"$(basename "$f")     >> /var/www/omx.utc/aaa.cgibol
+echo "tomma.sh          concat :::"  $f  " ---  /var/www/omx.utc.ark/"$(basename "$f")     >> /var/www/omx.utc/aaa.cgibol
 
-echo "concat :::"   $f " ---  /var/www/omx.utc.ark/"$(basename "$f")
+echo "tomma.sh         concat :::"   $f " ---  /var/www/omx.utc.ark/"$(basename "$f")
 
 #>>   /var/www/omx.utc/aaa.cgibol
-echo "<br />"
+echo "tomma.sh         <br />"
 #> /var/www/omx.utc/aaa.cgibol
 
 mv  $f "/var/www/omx.utc.ark/zott/"$(basename "$f").$(date  +%Y-%m-%d-%H-%M)
 
 done
-echo "<br />"
-echo "<hr>"
+echo "tomma.sh         <br />"
+echo "tomma.sh         <hr>"
 
 #zip /home/www/cgi-bin/aaa.zip /home/www/cgi-bin/*
 
@@ -45,5 +53,5 @@ echo "<hr>"
 
 #rm *_UTC*
 
-
-echo '</body></html>'
+echo "tomma.sh         vége  xxxxxxxxxxxxxxxxxxxxxxxxx"
+echo 'tomma.sh         </body></html>'
