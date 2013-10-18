@@ -48,8 +48,8 @@ echo "ragaszt          + + + + + + + +     checkout.sh   INDULNA"
 cgi="checkout.sh"
 sorok_szama=333
 KONYVT="/var/www/omx.utc.ark/"
-##################curl http://192.168.0.190:8008/cgi-bin/$cgi\?namex=$sorok_szama\&namey=orvos\&namez=$mit\&KONYVT=\/var\/www\/omx.utc.ark\/  
-curl http://127.0.0.1/cgi-bin/$cgi\?namex=$sorok_szama\&namey=orvos\&namez=$mit\&KONYVT=$KONYVT 
+curl http://192.168.0.190:8008/cgi-bin/$cgi\?namex=$sorok_szama\&namey=orvos\&namez=$mit\&KONYVT=\/var\/www\/omx.utc.ark\/  
+##proba DEBUGHOZ  curl http://127.0.0.1/cgi-bin/$cgi\?namex=$sorok_szama\&namey=orvos\&namez=$mit\&KONYVT=$KONYVT 
 # | grep "\[" >> $konyvtar""$mit
 echo "ragaszt          + + + + + + + +     checkout.sh  VÉGEEEEEEE"
 
