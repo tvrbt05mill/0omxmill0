@@ -1,0 +1,32 @@
+
+
+
+#CGI hívása				::  cgi-bin/nagyobbak_HIVO.sh
+#						::-->
+#						0	|
+#						0	|
+#						0	+----nagyobbak.sh &   fut a háttérben
+#						0	
+#						0	
+#						::  cgi-bin/nagyobbak_HIVI.sh üzenet kiíródik 
+#						::  a honlapon
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
