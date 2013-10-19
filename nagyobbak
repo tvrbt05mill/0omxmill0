@@ -9,18 +9,24 @@
 #						0	+----nagyobbak.sh &   fut a háttérben
 #						0	
 #						0	
-#						::  cgi-bin/nagyobbak_HIVI.sh üzenet kiíródik 
+#						::  cgi-bin/nagyobbak_HIVO.sh üzenet kiíródik 
 #						::  a honlapon
+						
+
+
 						echo "CGI hívása				
 						echo "				::  cgi-bin/nagyobbak_HIVO.sh"
 						echo "				::-->"
-						echo "				curl 127.0.0.1:8008/cgi-bin/nagyobbak_HIVO.sh"
-#						echo "0					|"
-#						echo "0					|"
-#						echo "0					+----nagyobbak.sh &   fut a háttérben"
-#						echo "0	"
-#						
-"
+						echo "				window.open("http://127.0.0.1:8008/cgi-bin/nagyobbak_HIVO.sh"
+						echo "0					|"
+						echo "0					|"
+						echo "0					+----nagyobbak.sh &   fut a háttérben"
+						echo "0	"
+						
+
+
+
+
 #				
 #
 #
